@@ -127,6 +127,9 @@ html, body{
     #lavori{
       height: auto;
     }
+    #contatti{
+      height: auto;
+    }
   }
 
   @media only screen and (min-device-width: 1024px) {
