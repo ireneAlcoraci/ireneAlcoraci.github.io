@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/ico" href="./utils/My Computer.png">
+        <title>Alcoraci Irene</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="./portfolio.css" rel="stylesheet">
+    </head>
+    <body>
+      <!-- barra di navigazione-->
+      <nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(48, 166, 196, 0.2);">
+    
+        <div class="container-fluid">
+           
+            <a class="navbar-brand" href="#">
+                 <img src="./utils/My Computer.png" alt="icona" width="30" height="24" class="d-inline-block align-text-top">
+            Alcoraci Irene
+            </a>
+           
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#intro">Home</a>
+              </li>
+              <li class="nav-item" id="punto">
+                <a class="nav-link active" aria-current="page" href="#lavori">Lavori Recenti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#info">Informazioni</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contatti">Contattami</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          
+          <!-- inserisco un contenitore contenente un paragrafo  -->
+          <div class="container-fluid" id="intro">
+            <p class="fs-1 fst-italic position-absolute bottom-50 end-50 text-body" style="padding-left: 20px;"> Ciao sono Alcoraci Irene, aspirante Web Developer. <br> Naviga sul mio sito per saperne di più</p>          
+          </div>
+
+          <!-- inserisco le card dei progetti-->
+          <div id="lavori" class ="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="./utils/applicazioneSoftware.png" class="card-img-top" alt="applicazione software azienda farmaceutica">
+                  <div class="card-body">
+                    <p class="card-text">Applicazione software che simula la gestione di un azienda farmaceutica e delle sue farmacie associate</p>
+                    <a href="./applicazioneSoftware/applicazioneSoftware.html" target="_blank" class="btn btn-primary">Visita il sito</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="./utils/sitoBootstrap.png" class="card-img-top" alt="sito creato utilizzando Bootstrap">
+                  <div class="card-body">
+                    <p class="card-text">Sito web informativo relativamente all'applicazione software dell'azienda farmaceutica</p>
+                    <a href="./sitoBootstrap/SitoBootstrap.html" target="_blank" class="btn btn-primary">Visita il sito</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <img src="./utils/paginaWeb.png" class="card-img-top" alt="sito che risponde alle tue domande">
+                  <div class="card-body">
+                    <p class="card-text">Sito web che tramite una funzione JavaScript risponde alle tue domande</p>
+                    <a href="./paginaWeb/paginaWeb.html" target="_blank" class="btn btn-primary">Visita il sito</a>
+                  </div>  
+                </div>
+              </div>
+           
+            </div>
+          </div>
+           
+          <!-- zona informazioni-->
+          <div id="info" class="container ">
+            <p class="fs-4 fst-italic position-absolute top-50 start-50 translate-middle"> Sono Irene Alcoraci, ho 21 anni e sto per laurearmi in ingegneria informatica presso l'università degli studi di Palermo. Non ho molta esperienza in ambito di web development ma sono una ragazza sempre pronta ad imparare cose nuove e che ama le sfide. Le mie conoscenze a livello di linguaggi software sono i linguaggi di programmazione C e Java. Mentre per quanto riguarda il linguaggi di programmazione web sono in grado di programmare in HTML, CSS, JavaScript e JQuery, anche con l'utilizzo di framework come Bootstrap e React. <br> Se vuoi saperne di pi&#250 sulla mia esperienza lavorativa <a id="link" href="./utils/curriculum vitae.pdf" target="_blank">visualizza il mio curriculum</a></p>
+          </div>
+          
+
+          <!--zona delle informazioni di contatto-->
+          <div id="contatti">
+            <p class="fs-5 fst-italic text-center paragrafo" > Per contattarmi potete inviarmi una mail compilando il seguente form</p>
+             <!-- corpo centrale -->
+              <form id="myForm" class="form_contatti" action="mailto:alcoraci44@gmail.com" enctype="text/plain" target="_self" method="post" novalidate>
+                  <!-- Nome -->
+                  <div class="input_container">
+                    <span class="material-icons">perm_identity</span>
+                    <input type="text" name="name" id="name" value="" placeholder="Nome e Cognome">
+                  </div>
+      
+                  <!-- email -->
+                  <div class="input_container">
+                    <span class="material-icons">alternate_email</span>
+                    <input type="text" name="email" id="email" value="" placeholder="E-mail">
+                  </div>
+      
+                  <!-- Telefono -->
+                  <div class="input_container">
+                    <span class="material-icons">phonelink_ring</span>
+                    <input type="text" name="tel" id="tel" value="" placeholder="telefono">
+                  </div>
+      
+                  <!-- Messaggio -->
+                  <div class="input_container">
+                    <span class="material-icons">message</span>
+                    <textarea name="text" id="text" rows="5" cols="80" placeholder="Messaggio" required></textarea>
+                  </div>
+  
+                  <!-- Pulsante invia -->
+                  <button class="" type="submit">Invia</button>
+                  <button class="" type="reset" onclick="document.getElementById('myForm').reset()">ripulisci form</button>
+              </form>
+          </div>
+          
+          <footer style ="text-align: center"> &copy; Copyright by Alcoraci Irene </footer> 
+         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+         <script type="text/javascript">
+         $(function() {
+         $('a').bind('click',function(event){
+         var $anchor = $(this);
+         $('html, body').stop().animate({
+         scrollTop: $($anchor.attr('href')).offset().top
+         }, 1000);
+         event.preventDefault();
+         });
+         });
+
+         </script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+     </body>
+</html>

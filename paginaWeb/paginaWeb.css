@@ -1,0 +1,44 @@
+body {
+    background-color: aquamarine;
+    margin: 100px;
+    margin-top: 250px;
+    
+}
+
+.contenitore{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+}
+
+#par{
+    font-size: large;
+}
+
+button{
+    background-color:green;
+    width: 100px;
+    color: white;
+    font-size: large;
+}
+
+button:hover{
+    color:red;
+}
+
+button:active{
+    color:blue;
+}
+
+.pulsante{
+    border: 2px solid black;
+    background-color: green;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+
+}
+.pulsante:hover{
+    color:red;
+}
+
