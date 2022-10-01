@@ -26,7 +26,11 @@ html, body{
 }
 
 .card{
-    margin-top: 50px;
+    margin-top: 10px;
+}
+
+.col{
+    height: auto;
 }
 
 #info{
@@ -119,3 +123,15 @@ html, body{
   .paragrafo{
     padding-top: 45px;
   }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+    #lavori{
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-device-width: 1024px) {
+    #info>p{
+      font-size: 25px;
+    }
+  }
+  
