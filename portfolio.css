@@ -1,140 +1,232 @@
-html, body{
-    height: 100%;
-    background-color: rgba(48, 166, 196, 0.2);
+/* regoli generali*/
+*{
+  box-sizing: border-box;
+  margin: auto;
+  text-align: justify;
+  font: normal 400 'Fira Code', sans-serif ;
 }
 
-#intro{
-   background-image: url(./utils/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    position:relative;
-    height: 100%;
-    background-size:cover;
-    max-width: 100%;
-    
-    
+body{
+  width: 100%;  
 }
 
-#lavori{
-    background-color:rgba(0, 68, 255, 0.822);
-    position:relative;
-    height: 100%;
-    background-size:cover;
-    max-width: 100%;
+a, p, div[class *= col-]{
+  font-size: 25px;
+  line-height: 30px;
+}
+
+
+/* regole per i contenitori*/
+.container-fluid{
+  margin-top: 50px;
+  width: 85%;
+}
+
+#intro, #info, #tools, #lavori, #contatti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 56px 58px;
+  gap: 24px;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+
+/*  regole per la navbar*/
+.navbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  gap: 8px;
+
+ /* position: absolute;
+  height: 72px;
+  left: 16px;
+  top: 16px;*/
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 20px rgba(64, 63, 72, 0.08);
+  border-radius: 24px;
+
+  /*flex: none;*/
+  order: 5;
+  flex-grow: 0;
+  z-index: 5;
+  
+}
+
+.nav-link{
+  color: black;
+  font-size: 25px;
+}
+
+.nav{
+  margin-right: 10px;
+}
+
+
+/* regola per il contenitore introduttivo*/
+#intro{  
+  z-index: 0; 
+}
+
+/*
+#intro>p{
+  font-style: bold;
+  font-size: 30px;
+}
+
+
+#intro>img{
+  vertical-align: middle;
+}*/
+
+
+/* regola per il contenitore delle informazioni*/
+#info{
+  background: #E5FFE4;
+  border-radius: 24px;
    
+  align-self: stretch;
+} 
 
+
+/* regola per il contenitore dei tools*/
+#tools{
+  background: #F0F0FF;
+  border-radius: 24px;
+
+  align-self: stretch;
+}
+
+
+/* regole per il contenitore dei lavori*/
+#lavori{
+  background: #FFF1E4;
+  border-radius: 24px;
+ 
+  align-self: stretch;
 }
 
 .card{
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
-.col{
-    height: auto;
-}
 
-#info{
-    background-color:rgba(29, 88, 248, 0.822);
-    position:relative;
-    height: 100%;
-    background-size:cover;
-    max-width: 100%;
-   
-}
-
-#link{
-    color: purple;
-}
-
-#link:hover{
-    color: brown;
-}
-
+/* regole contenitire dei contatti*/
 #contatti{
-    background-color:rgba(66, 115, 248, 0.822);
-    position:relative;
-    height: 100%;
-    background-size:cover;
-    max-width: 100%;
-     
+  background: #FBFFE1;
+  border-radius: 24px;
+
+  align-self: stretch;
 }
 
+#contatti>p>a{
+  font-size: 30px;
+  color: #0a0a0a;
+ }
+ 
+
+/* grafica per il form di contatto*/
 .form_contatti{
-    padding: 50px;
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.09);
-    margin: auto;
-    max-width: 600px;
-  }
-  .form_contatti button {
-    display: block;
-    margin: 20px auto 5px auto;
-    position: relative;
-    top: 0px;
-    border-radius: 10px;
-    padding: 10px 40px;
-    font-size: 18px;
-    color: white;
-    background: #120aefc9;
-    background-size: 130%;
-    background-position: left;
-    transition: all 0.3s;
-    border: 0px;
-  }
-  .form_contatti button:hover {
-    top: -4px;
-    background-position: right;
-  }
-  .input_container {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    background-color: white;
-    border: 1px solid #e6e6e6;;
-    border-radius: 8px;
-    padding: 5px 20px 5px 20px;
-    margin-bottom: 10px;
-  }
-  .input_container:hover {
-    box-shadow: 0 0 20px 0 rgba(0,0,0,.09);
-  }
-  .input_container input, textarea {
-    width: 100%;
-    font-size: 16px;
-    border: 1px solid white!important;
-    -webkit-appearance: none!important;
-    -moz-appearance: none!important;
-    appearance: none!important;
-    padding: 15px 18px;
-    transition: all 0.2s;
-    color: #3d4459;
-  }
-  .input_container > input:focus {
-    border: 1px solid #a5afb8!important;
-    background-color: #fafafa;
-  }
-  .input_container span {
-    user-select: none;
-    font-size: 30px;
-    background: #4A44F2;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   margin-right: 20px;
-  }
-  .paragrafo{
-    padding-top: 45px;
-  }
-  @media only screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-    #lavori{
-      height: auto;
+  margin: auto;
+  max-width: 600px;
+}
+.form_contatti button {
+  display: block;
+  margin: 20px auto 5px auto;
+  position: relative;
+  top: 0px;
+  border-radius: 10px;
+  padding: 10px 40px;
+  font-size: 18px;
+  color: white;
+  background: #0a0a0a;
+  background-size: 130%;
+  background-position: left;
+  transition: all 0.3s;
+  border: 0px;
+}
+.form_contatti button:hover {
+  top: -4px;
+  background-position: right;
+}
+.input_container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #e6e6e6;;
+  border-radius: 8px;
+  padding: 5px 20px 5px 20px;
+  margin-bottom: 10px;
+}
+.input_container:hover {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,.09);
+}
+.input_container input, textarea {
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid white!important;
+  -webkit-appearance: none!important;
+  -moz-appearance: none!important;
+  appearance: none!important;
+  padding: 15px 18px;
+  transition: all 0.2s;
+  color: #3d4459;
+}
+.input_container > input:focus {
+  border: 1px solid #a5afb8!important;
+  background-color: #fafafa;
+}
+.input_container span {
+  user-select: none;
+  font-size: 30px;
+  background: #0c0c0c;
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ margin-right: 20px;
+}
+
+
+
+  @media only screen and (max-device-width: 991px) {
+    .navbar{
+      margin: 5px 2px 2px;
+     }
+
+     .container-fluid{
+       width: 95%;
     }
-    #contatti{
-      height: auto;
+
+    #intro{
+      flex-direction: column;
     }
   }
 
-  @media only screen and (min-device-width: 1024px) {
-    #info>p{
-      font-size: 25px;
-    }
+
+  @media only screen and (min-device-width: 992px) {
+   .navbar{
+    margin: 16px 80px 0px 80px;
+   }
+
+   #intro, #info, #tools, #lavori, #contatti{
+    height: 20%;
+   }
+   .container-fluid{
+     width: 85%;
   }
-  
+  #intro{
+    flex-direction: row;
+  }
+
+  #info>h1, #lavori>h1{
+    margin-left: 0;
+  }
+
+}
