@@ -1,7 +1,9 @@
 /* regoli generali*/
 *{
   box-sizing: border-box;
-  margin: auto;
+  /*margin: auto;*/
+  margin: 0;
+  padding: 0;
   text-align: justify;
   font: normal 400 'Fira Code', sans-serif ;
 }
@@ -18,7 +20,7 @@ a, p, div[class *= col-]{
 
 /* regole per i contenitori*/
 .container-fluid{
-  margin-top: 50px;
+  margin-top: 50vh;
   width: 85%;
 }
 
@@ -62,7 +64,7 @@ a, p, div[class *= col-]{
 
 .nav-link{
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .nav{
@@ -73,6 +75,10 @@ a, p, div[class *= col-]{
 /* regola per il contenitore introduttivo*/
 #intro{  
   z-index: 0; 
+}
+
+#intro>h1{
+    font-size: 56px;
 }
 
 /*
@@ -216,7 +222,7 @@ a, p, div[class *= col-]{
 
   @media only screen and (max-device-width: 991px) {
     .navbar{
-      margin: 5px 2px 2px;
+      margin: 5vh 2vh 2vh;
      }
 
      .container-fluid{
@@ -230,7 +236,11 @@ a, p, div[class *= col-]{
 
 
   @media only screen and (min-device-width: 992px) {
-   .navbar{
+   *{
+    margin: auto;
+   }
+   
+    .navbar{
     margin: 16px 80px 0px 80px;
    }
 
