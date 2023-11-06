@@ -133,9 +133,15 @@ a, p, div[class *= col-]{
 }
 
 #contatti>p>a{
-  font-size: 30px;
   color: #0a0a0a;
+  font-size: 40px;
  }
+
+#contatti>p[id=paraMail]{
+  font-size: 40px;
+ }
+
+
  
 
 /* grafica per il form di contatto*/

@@ -1,7 +1,13 @@
 body {
-    background-color: aquamarine;
+    background-image:url("./utils/sfondoMagicBall.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: rgb(17, 17, 17);
+    /*background-color: aquamarine;*/
     margin: 100px;
-    margin-top: 250px;
+    margin-top: 300px;
+    max-width: 100%;
+    height: auto;
     
 }
 
