@@ -33,6 +33,7 @@ a, p, div[class *= col-]{
   flex: none;
   order: 0;
   flex-grow: 0;
+
 }
 
 
@@ -73,7 +74,8 @@ a, p, div[class *= col-]{
 
 /* regola per il contenitore introduttivo*/
 #intro{  
-  z-index: 0; 
+  z-index: 0;
+  height: 100vh; 
 }
 
 #intro>h1{
@@ -255,12 +257,14 @@ a, p, div[class *= col-]{
     margin: 16px 80px 0px 80px;
    }
 
-   #intro, #info, #tools, #lavori, #contatti{
+    #info, #tools, #lavori, #contatti{
     height: 20%;
    }
+   
    /*.container-fluid{
      width: 85%;
   }*/
+
   #intro{
     flex-direction: row;
   }
