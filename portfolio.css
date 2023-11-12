@@ -124,10 +124,13 @@ a, p, div[class *= col-]{
   margin-top: 10px;
   background: #FFF1E4;
   border: #FFF1E4;
+  
 }
 
 .card-img-top{
   object-fit:cover;
+  height: 217px;
+  align-self: stretch;
 }
 
 
@@ -260,7 +263,7 @@ a, p, div[class *= col-]{
     #info, #tools, #lavori, #contatti{
     height: 20%;
    }
-   
+
    /*.container-fluid{
      width: 85%;
   }*/
