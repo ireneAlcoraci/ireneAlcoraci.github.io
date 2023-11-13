@@ -1,17 +1,19 @@
 /* regoli generali*/
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+
 *{
   box-sizing: border-box;
   /*margin: auto;*/
   margin: 0;
   padding: 0;
-  font: normal 400 'Fira Code', sans-serif ;
+  font: normal 400 20px/30px Fira Code;
 }
 
 body{
   width: 100%;  
 }
 
-a, p, div[class *= col-]{
+a, p, li, div[class *= col-]{
   font-size: 25px;
   line-height: 30px;
 }
@@ -133,6 +135,10 @@ a, p, div[class *= col-]{
   align-self: stretch;
 }
 
+.card-body>h5{
+  font-weight: 500;
+}
+
 
 /* regole contenitire dei contatti*/
 #contatti{
@@ -240,6 +246,24 @@ a, p, div[class *= col-]{
     .navbar{
       margin: 5vh 2vh 2vh;
      }
+
+     .phoneNav{
+      background-color: black;
+      margin: 0%;
+      height: 100vh;
+    }
+
+    .phoneNavLink{
+      color: white;
+      margin: 20% 0;
+      font-size:32px;
+      text-align: center;
+    }
+    
+    .phoneNavButtom{
+      color: white;
+      font-size:40px;
+    }
 
      /*.container-fluid{
        width: 95%;

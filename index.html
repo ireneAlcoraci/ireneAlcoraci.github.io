@@ -111,7 +111,7 @@
               <h1> 💼 Portfolio</h1>
               <div class="row">
                 <div class="col">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 15rem;">
                     <img src="./utils/applicazioneSoftware.png" class="card-img-top" alt="applicazione software azienda farmaceutica">
                     <div class="card-body">
                       <h5> Software Pharmaceutical Company</h5>
@@ -121,7 +121,7 @@
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 15rem;">
                     <img src="./utils/sitoBootstrap.png" class="card-img-top" alt="sito creato utilizzando Bootstrap">
                     <div class="card-body">
                       <h5> Website Pharmaceutical Company</h5>
@@ -132,7 +132,7 @@
                 </div>
                 
                 <div class="col">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: 15rem;">
                     <img src="./utils/paginaWebBall.png" class="card-img-top" alt="sito che risponde alle tue domande">
                     <div class="card-body">
                       <h5> Magic 8 Ball</h5>
@@ -240,56 +240,47 @@
 
           <script type="text/javascript">
              //inserisco le caratteristiche di layout del menu da telefono
-             $('#navbarSupportedContent').on('show.bs.collapse', function () {
+ $('#navbarSupportedContent').on('show.bs.collapse', function () {
             // $('#navbarSupportedContent').show();
-              $('nav').css('background-color', 'black');
+              $('nav').addClass('phoneNav');
 
             //caratteristiche del link
-              $('nav>a').css({'color': 'white',
-                              'font-size': '40px'});
+              $('nav>a').css({'color': 'white'});
 
             //caratteristiche del pulsante
               $('#button').removeClass('navbar-toggler-icon'); 
-              $('#button').addClass('bi bi-x-lg ');
-              $('#button').css({'color': 'white',
-                                  'font-size':'40px' });
-
+              $('#button').addClass('bi bi-x-lg phoneNavButtom');
+             
             //caratteristriche della lista                    
               $('#navbarSupportedContent>ul').addClass('flex-column');
-              $('.nav-link').css({'color': 'white',
-                                  'margin': '25% 0',
-                                  'font-size':'40px' });
+              $('.nav-link').addClass('phoneNavLink');
 
              $('.nav-link').click(function () {
                   $('#navbarSupportedContent').hide();
-                  $('#navbarSupportedContent').trigger('hide.bs.collapse');
-                
+                  $('#navbarSupportedContent').trigger('hide.bs.collapse');        
 
               })
+
               $('#navbarSupportedContent').show();
 
+              
               
             })
 
           //layout del menu chiuso
             $('#navbarSupportedContent').on('hide.bs.collapse', function () {
-              $('nav').css('background-color', 'white');
+              $('nav').removeClass('phoneNav');
 
              //effettuo un reset delle caratteristiche del link
-              $('nav>a').css({'color': 'black',
-                              'font-size': '20px'});
+              $('nav>a').css({'color': 'black'});
 
              //effettuo un reset delle caratteristiche del pulsante
-              $('#button').removeClass('bi bi-x-lg ');
+              $('#button').removeClass('bi bi-x-lg phoneNavButtom');
               $('#button').addClass('navbar-toggler-icon'); 
-              $('#button').css({'color': 'black',
-                                  'font-size':'25px' });
-                                  
+                                                
              //effettuo un reset delle caratteristriche della lista                    
               $('#navbarSupportedContent>ul').removeClass('flex-column');
-              $('.nav-link').css({'color': 'black',
-                                  'margin': 'auto',
-                                  'font-size':'25px' });
+              $('.nav-link').removeClass('phoneNavLink');
               
                   
             })
