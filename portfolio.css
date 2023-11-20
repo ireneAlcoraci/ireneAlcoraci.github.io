@@ -150,7 +150,7 @@ a, p, li, div[class *= col-]{
 
 #contatti>p>a{
   color: #0a0a0a;
-  font-size: 30px;
+  font-size: 100%;
  }
 
 /*#contatti>p[id=paraMail]{
@@ -264,7 +264,7 @@ a, p, li, div[class *= col-]{
       color: white;
       font-size:40px;
     }
-
+   
      /*.container-fluid{
        width: 95%;
     }
