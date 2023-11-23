@@ -4,8 +4,8 @@ function Navbar(){
         <div className="container-fluid">
           <a className="navbar-brand">Borse Market</a>
             <div className="navbar-nav">
-              <a className="nav-link active">Carrello</a>
-              <a className="nav-link active" href="#">Vedi codice</a>
+              <a className="nav-link active">🛒 Carrello</a>
+              <a className="nav-link active" href="https://github.com/ireneAlcoraci/ireneAlcoraci.github.io/tree/main/react-app">Vedi codice</a>
           </div>
         </div>
       </nav>

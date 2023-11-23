@@ -13,10 +13,10 @@ import zaino from './images/zaino-blu.webp';
 
 class App extends Component {
 state = {cards:[
-    {id:0, name:"Borsa di pelle", price: 23.59 , picture: pelle, quantity: 0},
+    {id:0, name:"Borsa rossa", price: 50.00 , picture: rossa, quantity: 0},
     {id:1, name:"Borsa grigia", price: 27.85 , picture: grigia, quantity: 0},
     {id:2, name:"Borsa rosa", price: 35.99 , picture: rosa, quantity: 0},
-    {id:3, name:"Borsa rossa", price: 50.00 , picture: rossa, quantity: 0},
+    {id:3, name:"Borsa di pelle", price: 23.59 , picture: pelle, quantity: 0},
     {id:4, name:"Borsa marrone", price: 30.55 , picture: marrone, quantity: 0},
     {id:5, name:"Zaino blu", price: 25.75 , picture: zaino, quantity: 0}
   ]
@@ -26,7 +26,7 @@ state = {cards:[
     const cards = [...this.state.cards];
     const id = cards.indexOf(card);
     cards[id] = { ...card };
-    if (cards[id].quantity != 0) {
+    if (cards[id].quantity !== 0) {
       cards[id].quantity--;
     }else{
       cards[id].quantity = 0;
