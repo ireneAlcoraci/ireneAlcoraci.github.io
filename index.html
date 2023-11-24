@@ -252,8 +252,8 @@
           <footer style ="text-align: center"> &copy; Copyright by Alcoraci Irene </footer> 
 
           <script type="text/javascript">
-             //inserisco le caratteristiche di layout del menu da telefono
- $('#navbarSupportedContent').on('show.bs.collapse', function () {
+          //inserisco le caratteristiche di layout del menu da telefono
+          $('#navbarSupportedContent').on('show.bs.collapse', function () {
             // $('#navbarSupportedContent').show();
               $('nav').addClass('phoneNav');
 
@@ -267,17 +267,26 @@
             //caratteristriche della lista                    
               $('#navbarSupportedContent>ul').addClass('flex-column');
               $('.nav-link').addClass('phoneNavLink');
+                           
+              $('#navbarSupportedContent').show();             
+              
+          })
 
+            //funzioni in caso di selezione di un link o pulsante x quando la navbar è visibile
+            $('#navbarSupportedContent').on('shown.bs.collapse', function () {
+  
+              $('button').click(function(){
+                $('#navbarSupportedContent').hide();
+                  $('#navbarSupportedContent').trigger('hide.bs.collapse');  
+
+              })
+              
              $('.nav-link').click(function () {
                   $('#navbarSupportedContent').hide();
                   $('#navbarSupportedContent').trigger('hide.bs.collapse');        
 
               })
 
-              $('#navbarSupportedContent').show();
-
-              
-              
             })
 
           //layout del menu chiuso
@@ -297,6 +306,17 @@
               
                   
             })
+
+            //funzioni in caso di selezione del pulsante menù quando la navbar non è visibile
+            $('#navbarSupportedContent').on('hidden.bs.collapse', function () {
+  
+              $('button').click(function(){
+                $('#navbarSupportedContent').trigger('show.bs.collapse');
+                
+              })
+
+            })
+            
 
             //gestione del form dei contatti
             window.REQUIRED_CODE_ERROR_MESSAGE = 'Scegli un prefisso paese';
